@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+MAINTAINER lannt.xyz@gmail.com
+
 WORKDIR /app/archiva
 
 RUN apt-get update && \
