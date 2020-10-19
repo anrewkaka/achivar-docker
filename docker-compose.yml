@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  archiva:
+    image: lanntxyz/archiva:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - ./archiva.xml:/app/archiva/apache-archiva-2.2.5/conf/archiva.xml
+      - ./repositories:/app/archiva/apache-archiva-2.2.5/repositories
+      - ./data:/app/archiva/apache-archiva-2.2.5/data
